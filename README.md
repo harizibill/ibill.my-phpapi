@@ -1,5 +1,5 @@
 # ibill.my-phpapi
-iBill.my payment gateway API for PHP
+iBill.my payment gateway universal API
 
 Read instruction below.
 

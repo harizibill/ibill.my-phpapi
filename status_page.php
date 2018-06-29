@@ -48,7 +48,7 @@ $std_datepaid=$_POST['std_datepaid'];				//Time Customer make payment
 				<!-- Display details for Receipt -->
 				  <table width="100%" align="center">
 				  <?php
-				  if($std_secret!="yoursecretkey")
+				  if($std_secret=="yoursecretkey")
 				  {
 					?>
 					<tr>

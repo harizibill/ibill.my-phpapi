@@ -10,7 +10,7 @@ $std_status_code=$_POST['std_status_code']; 		//Code payment status
 $std_status=$_POST['std_status']; 					//Payment Status
 $std_order_id=$_POST['std_order_id'];				//Order ID send by your system
 $std_purchase_code=$_POST['std_purchase_code'];		//Purchase Code
-$std_secret=$_POST['std_secret'];					//Your secret key
+$std_hash_code=$_POST['std_hash_code'];					//Security code send from iBill
 $std_amount=$_POST['std_amount'];					//Total Amount Customer Pay
 $std_datepaid=$_POST['std_datepaid'];				//Time Customer make payment
 
@@ -48,7 +48,8 @@ $std_datepaid=$_POST['std_datepaid'];				//Time Customer make payment
 				<!-- Display details for Receipt -->
 				  <table width="100%" align="center">
 				  <?php
-				  if($std_secret=="yoursecretkey")
+				$yourhashcode = md5('yourapisecretkey'.'yourapiid'.$std_order_id.$std_amount);
+				  if($std_hash_code == $yourhashcode)
 				  {
 					?>
 					<tr>

@@ -157,7 +157,7 @@
                 <td colspan="2"><table style="border: 1px solid rgb(84, 141, 212);" class="menu" cellpadding="0" cellspacing="0" height="19" width="722">
                     <tbody>
                       <tr>
-                        <td align="center">&nbsp;&nbsp;Copyright iBill.my © 2018 All rights reserved&nbsp;&nbsp; </td>
+                        <td align="center">&nbsp;&nbsp;Copyright iBill.my Â© 2018 All rights reserved&nbsp;&nbsp; </td>
                       </tr>
                     </tbody>
                   </table></td>
@@ -180,7 +180,6 @@
 <!-- Mandatory input need to send to iBill.my -->
 
 <input type=hidden value="xxxxxxx" name="apiid"> <!-- Your API ID -->
-<input type=hidden value="xxxxxxx" name="apisecret"> <!-- Your Secret Key -->
 <input type=hidden value="Ahmad Bin Mutalib" name="apiname"> <!-- Your customer name --> <!-- Value Attribute: varchar(255)  -->
 <input type=hidden value="ahmadmutailb@gmail.com" name="apiemail"> <!-- Your customer email --> <!-- Value Attribute: varchar(255)  -->
 <input type=hidden value="60123456789" name="apiphone"> <!-- Your customer phone --> <!-- Value Attribute: varchar(255)  -->

@@ -26,6 +26,7 @@ Please direct all enquires to info@ibill.my or hariz@ibill.my
    You may download our integration manual from www.ibill.my 
 6. The field below is mandatory to fill for payment detail. After customer makes payment, the status will be sent to your return URL. 
    You may view the sample return status on file status_page.php
+7. To get the callback payment status from your system you may view sample from callback_page.php
 
 Please direct all enquires to info@ibill.my. 
 

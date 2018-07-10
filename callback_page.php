@@ -1,12 +1,12 @@
 <?php
 		$hash_code = md5('standard'.'yourapiid'.'yourapisecret'.'3.00');
 		$std_post = array(
-							'apitype'=>'standard',
-							'apiid'=>'yourapiid',
-							'apiorderid'=>'1002',
-							'apihashcode'=>$hash_code,
-							'apiamount'=>'3.00',
-							'apiemail'=>'atiqahmb@gmail.com');
+							'apitype'=>'standard',				//fix value
+							'apiid'=>'yourapiid',				//your api id from ibill
+							'apiorderid'=>'1002',				//your order id
+							'apihashcode'=>$hash_code,			//generate hash code as above
+							'apiamount'=>'3.00',				//your customer transaction amount
+							'apiemail'=>'atiqahmb@gmail.com');		//your customer email
 				
 	   $callbackJSON = json_encode($std_post);
 	   

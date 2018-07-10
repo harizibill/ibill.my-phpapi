@@ -179,7 +179,12 @@
 
 <!-- Mandatory input need to send to iBill.my -->
 
+<?php
+	$apihashcode = md5('yourapisecret'.'yourapiid'.$apiorderid.$apiamount); 
+?>
+		
 <input type=hidden value="xxxxxxx" name="apiid"> <!-- Your API ID -->
+<input type=hidden value="<?php $apihashcode ?>" name="apihashcode"> <!-- Your Hash code-->
 <input type=hidden value="Ahmad Bin Mutalib" name="apiname"> <!-- Your customer name --> <!-- Value Attribute: varchar(255)  -->
 <input type=hidden value="ahmadmutailb@gmail.com" name="apiemail"> <!-- Your customer email --> <!-- Value Attribute: varchar(255)  -->
 <input type=hidden value="60123456789" name="apiphone"> <!-- Your customer phone --> <!-- Value Attribute: varchar(255)  -->

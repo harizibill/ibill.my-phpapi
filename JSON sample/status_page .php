@@ -13,12 +13,13 @@
 		$std_status = $objJSON->{'std_status'};					//Payment Status
 		$std_order_id = $objJSON->{'std_order_id'};				//Order ID send by your system
 		$std_purchase_code = $objJSON->{'std_purchase_code'};	//Purchase Code
-		$std_secret = $objJSON->{'std_secret'};					//Your secret key
+		$std_hash_code = $objJSON->{'std_hash_code'};					//Your secret key
 		$std_amount = $objJSON->{'std_amount'};					//Total Amount Customer Pay
 		$std_datepaid = $objJSON->{'std_datepaid'};				//Time Customer make payment
 		
+		$yourhashcode = md5('yourapisecretkey'.'yourapiid'.$std_order_id.$std_amount);
 		
-		if($std_secret!="yoursecretkey")								//check your secret key
+		if($std_hash_code == $yourhashcode)								//check your secret key
 		{
 			if ($std_status_code == '00' && $std_status == 'Paid')		//Payment success
 			{

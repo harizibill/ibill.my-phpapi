@@ -180,7 +180,8 @@
 <!-- Mandatory input need to send to iBill.my -->
 
 <?php
-	$apihashcode = md5('yourapisecret'.'yourapiid'.$apiorderid.$apiamount); 
+	//Generate your hashcode
+	$apihashcode = md5('yourapisecret'.'yourapiid'.$apiorderid.$apiamount);  
 ?>
 		
 <input type=hidden value="xxxxxxx" name="apiid"> <!-- Your API ID -->
